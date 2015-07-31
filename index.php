@@ -14,7 +14,7 @@
     <link href="css/shipdi.css" rel="stylesheet">
   </head>
   <body>
-      <div id="navigation" class="navbar  ">
+<!--      <div id="navigation" class="navbar  ">
           <div class="navbar-header">
               <a class="navbar-brand" href="#"></a>
           </div>
@@ -43,7 +43,7 @@
                <li><a href="#"><span class="glyphicon glyphicon-envelope"></span> Login</a></li>
             </ul>
            </div>
-      </div>
+      </div>-->
       
       <div class="content ">
         <div class="row">
@@ -52,8 +52,8 @@
                     <label for="sel_payment" class="col-md-2  control-label  control-label">HT thanh toán (<span class="glyphicon glyphicon-asterisk red"></span>)</label>
                     <div class="col-md-8" >
                         <select  class="form-control"  >
-                            <option selected="selected">Người gửi trả tiền</option>
-                            <option>Người nhận trả tiền</option>
+                            <option selected="selected">Shop trả tiền</option>
+                            <option>Khách hàng trả tiền</option>
 
                         </select>
                     </div>
@@ -61,7 +61,7 @@
                  <div class="form-group">
                      <label for=" input_recipient" class="col-md-2  control-label  control-label">Tiền thu người nhận </label>
                      <div class="col-md-3">
-                         <input type="text" class="form-control" data-toggle="tooltip" data-placement="top" title="Tiền thu người nhận chưa tính gói cước dịch vụ"class="form-control" id="input_recipient" >
+                         <input type="text" class="form-control" data-toggle="tooltip" data-placement="top" data-trigger="hover" title="Tiền thu người nhận chưa tính gói cước dịch vụ "class="form-control" id="input_recipient" >
                        
                          <p>()<strong>VND</strong></p>
                      </div>
@@ -90,15 +90,15 @@
             </div>
             <div class="col-lg-5">
                 <div class="form-group">
-                     <label for=" tem_niem_phong" class="col-md-2  control-label " control-label">Tem niêm phong (<span class="glyphicon glyphicon-asterisk red"></span>)</label>
+                     <label for=" tem_niem_phong" class="col-md-2  control-label " control-label">Tem niêm phong </label>
                      <div class="col-md-8">
-                         <input type="text" placeholder="Tem niêm phong"  data-toggle="tooltip" data-placement="top" title="Tem niêm phong" class="form-control" id="tem_niem_phong" >
+                         <input type="text" placeholder="Tem niêm phong"  data-toggle="tooltip" data-placement="bottom" data-trigger="hover" title="Tem niêm phong" class="form-control" id="tem_niem_phong" >
 
 
                       
                      </div>
                  </div>
-                 <div class="form-group">
+<!--                 <div class="form-group">
                      <label for=" ma_don_hang" class="col-md-2  control-label " control-label">Mã đơn hàng công ty </label>
                      <div class="col-md-8">
                          <input type="text" placeholder="Mã đơn hàng công ty" data-toggle="tooltip" data-placement="top" title="Mã đơn hàng công ty" class="form-control" id="ma_don_hang" >
@@ -106,11 +106,11 @@
 
                       
                      </div>
-                 </div>
+                 </div>-->
                 <div class="form-group">
                      <label for=" ma_voucher" class="col-md-2  control-label " control-label>Mã voucher </label>
                      <div class="col-md-8">
-                         <input type="text" placeholder="Mã voucher" data-toggle="tooltip" data-placement="top" title="Mã voucher" class="form-control" id="ma_voucher" >
+                         <input type="text" placeholder="Mã voucher" data-toggle="tooltip" data-placement="top" data-trigger="hover" title="Mã voucher" class="form-control" id="ma_voucher" >
 
 
                       
@@ -120,12 +120,12 @@
         </div>
           <div  class="container-fluid" id="division"> </div>  
           <div class="row">
-            <div class="col-lg-6">
+            <div class="col-lg-7">
                 
                  <div class="form-group ">
                      <div class="col-md-3"></div>
                      <div class="  col-md-2">
-                         <b style="position: absolute;top:20px">Người gửi</b>
+                         <b style="position: absolute;top:20px">NGƯỜI GỬI</b>
                      </div>
                     <div class="col-md-5">
                         <select  class="form-control" >
@@ -150,8 +150,9 @@
                      <label class="  col-md-3 control-label"  >
                          Điện thoại người gửi(<span class="glyphicon glyphicon-asterisk red"></span>)
                      </label>
-                    <div class="col-md-8">
-                        <input type="text" placeholder=" Điện thoại người gửi, vd 0838XXXYYY,0908XXXYYY,012XXXYYYZZ "  data-toggle="tooltip" data-placement="top" title="Nhập điện thoại người gửi, vd 0838XXXYYY,0908XXXYYY,012XXXYYYZZ" class="form-control" >
+                    <div class="col-md-8" id="telephone">
+                        <input type="text" placeholder=" Điện thoại người gửi, vd 0838XXXYYY,0908XXXYYY,012XXXYYYZZ "  data-toggle="tooltip" data-placement="top" 
+                               data-trigger="hover" title="Nhập điện thoại người gửi, vd 0838XXXYYY,0908XXXYYY,012XXXYYYZZ" class="form-control"  >
                             
                     </div>
                 </div>
@@ -165,11 +166,101 @@
                             
                     </div>
                 </div>   
-            </div>
+                <div class="form-group ">
+                     <div class="col-md-3"></div>
+                     <div class="  col-md-3" style="margin-top: 20px">
+                         <b >NGƯỜI NHẬN</b>
+                     </div>
+                    
+                </div>
+                <div class="form-group ">
+                     
+                     <label class="  col-md-3 control-label" >
+                         Địa chỉ người nhận(<span class="glyphicon glyphicon-asterisk red"></span>)
+                     </label>
+                    <div class="col-md-7">
+                        <input type="text" placeholder="Địa chỉ nhận hàng"  class="form-control" >
+                            
+                    </div>
+                     <div class="col-xs-1" id="map"><span class="glyphicon glyphicon-map-marker green"></span></div>
+                </div>
+                <div class="form-group ">
+                     
+                     <label class="  col-md-3 control-label" >
+                        Tên người nhận(<span class="glyphicon glyphicon-asterisk red"></span>)
+                     </label>
+                    <div class="col-md-8">
+                        <input type="text" placeholder="Họ tên người nhận hàng"    data-toggle="tooltip" data-placement="top" data-trigger="hover"
+                              title="Nhập họ tên người nhận hàng" class="form-control" >
+                            
+                    </div>
+                     
+                </div>
+                <div class="form-group ">
+                     
+                     <label class="  col-md-3 control-label"  >
+                         Điện thoại người nhận
+                     </label>
+                    <div class="col-md-8" id="telephone">
+                        <input type="text" placeholder=" Điện thoại người nhận hàng, vd 0838XXXYYY,0908XXXYYY,012XXXYYYZZ "  data-toggle="tooltip" data-placement="top" 
+                              data-trigger="hover" title="Nhập điện thoại người gửi, vd 0838XXXYYY,0908XXXYYY,012XXXYYYZZ" class="form-control"  >
+                            
+                    </div>
+                </div>
+                <div class="form-group">
+                   <label for=" sel_service_charges" class="col-md-2  control-label " control-label">Gói cước dịch vụ (<span class="glyphicon glyphicon-asterisk red"></span>)</label>
+                    <div class="col-md-4">
+                          
+                        <select  class="form-control"  id="sel_service_charges" >
+                            <option>0-1,000,000VND</option>
+                            <option>1,000,001-2,000,000VND</option>
+                            <option>2,000,001-3,000,000VND</option>
+                            <option>4,000,001-5,000,000VND</option>
 
-             <div class="col-lg-6">
+                        </select>
+                    </div>
+                </div>
+                 <div class="form-group">
+                     <label for=" weight"  class="col-md-2  control-label " control-label" >Khối lượng (<span class="glyphicon glyphicon-asterisk red"></span>)</label>
+                    <div class="col-md-4" data-toggle="tooltip" data-trigger="hover" data-placement="top"  title="Chọn mức khối lượng cho mặt hàng">
+                          
+                        <select  class="form-control"  id="weight" >
+                            <option>Nhẹ (<3kg)</option>
+                            <option>Trung bình ( từ 3-10kg)</option>
+                            <option>Nặng (lớn hơn 10kg)</option>
+                            
 
-                        fggdsfgdg
+                        </select>
+                    </div>
+                </div>
+                <div class="form-group">
+                        <label for=" size"  class="col-md-2  control-label " control-label" >Kích thước (<span class="glyphicon glyphicon-asterisk red"></span>)</label>
+                  
+                        <div class="col-xs-1">Dài:</div>
+                        <div class="col-md-2" data-toggle="tooltip" data-trigger="hover" data-placement="top" title="Dài (cm)">
+                            <input type="text" class="form-control" > 
+                                
+                        </div>   
+                  
+                        <div class="col-xs-1">Rộng:</div>
+                        <div class="col-md-2" data-toggle="tooltip" data-trigger="hover" data-placement="top" title="Rộng (cm)">
+                            <input type="text" class="form-control" > 
+                                
+                        </div>
+                  
+                        <div class="col-xs-1">Cao:</div>
+                        <div class="col-md-2" data-toggle="tooltip" data-trigger="hover" data-placement="top" title="Cao (cm)">
+                            <input type="text" class="form-control" > 
+                                
+                        </div>
+                         
+                       
+                    
+                </div>
+
+             <div class="col-lg-5">
+
+                        
             </div>
           </div>
       </div><!--END CONTENT-->

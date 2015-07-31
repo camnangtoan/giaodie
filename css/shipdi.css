@@ -40,10 +40,7 @@ and open the template in the editor.
 .navbar-nav >li>a:hover {
     background: #5d7f19;
 }
-#content
-{
-    
-}
+
 #maps_send
 {
     width:300px;
@@ -81,10 +78,8 @@ and open the template in the editor.
 }
 .form-group
 {
-    clear: both;
-   
+    clear: both;  
 }
-
 #division
 {
     border-bottom: 1px solid #eee;
@@ -104,4 +99,17 @@ input[placeholder]
     position: relative;
     top:12px;
     right:37px;
+}
+#telephone .tooltip-inner {
+    min-width:  260px; //the minimum width
+}
+.form-group .col-xs-1
+{
+    width: 45px;
+    position: relative;
+    top:12px;
+}
+label
+{
+    font-weight: normal;
 }
