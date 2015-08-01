@@ -64,10 +64,10 @@
                 <div id="nguoigui">
                     <div class="form-group ">
                         <div class="col-md-3"></div>
-                        <div class="  col-md-2">
-                            <label class="doituonggiaonhan "><b >NGƯỜI GỬI</b></label>
+                        <div class="  col-md-3">
+                            <label class="doituonggiaonhan ">Người gửi</label>(<span class="glyphicon glyphicon-asterisk red"></span>)
                         </div>
-                       <div class="col-md-6">
+                       <div class="col-md-5">
                            <select  class="form-control kichthuocfont" >
                                <option>Select a Shop</option>
                            </select>
@@ -113,13 +113,13 @@
                 <div id="hienthinguoigui">
                     <div class="col-md-3"></div>
                     <div class="col-md-6">
-                        <span class="guinhan"><button class="kichthuocfont" onClick="hienthinguoigui();">Hiển thị người gửi</button></span>
+                        <span class="guinhan"><button class="kichthuocfont" onClick="hienthinguoigui();">Hiển thị thông tin người gửi</button></span>
                     </div>
                 </div>
                 <div class="form-group ">
                      <div class="col-md-3"></div>
                      <div class="  col-md-3" style="margin-top: 20px">
-                         <label class="doituonggiaonhan"><b >NGƯỜI NHẬN</b></label>
+                         <label class="doituonggiaonhan">Người nhận</label>(<span class="glyphicon glyphicon-asterisk red"></span>)
                      </div>
                     
                 </div>
@@ -137,7 +137,7 @@
                 <div class="form-group ">
                      
                      <label class="  col-md-3 control-label" >
-                        Tên người nhận(<span class="glyphicon glyphicon-asterisk red"></span>)
+                        Tên người nhận
                      </label>
                     <div class="col-md-8">
                         <input type="text" placeholder="Họ tên người nhận hàng"    data-toggle="tooltip" data-placement="top" data-trigger="hover"
@@ -150,7 +150,7 @@
                 <div class="form-group ">
                      
                      <label class="  col-md-3 control-label"  >
-                         Điện thoại người nhận
+                         Điện thoại người nhận(<span class="glyphicon glyphicon-asterisk red"></span>)
                      </label>
                     <div class="col-md-8" id="telephone">
                         <input type="text" placeholder=" Điện thoại người nhận hàng, vd 0838XXXYYY,0908XXXYYY,012XXXYYYZZ "  data-toggle="tooltip" data-placement="top" 
